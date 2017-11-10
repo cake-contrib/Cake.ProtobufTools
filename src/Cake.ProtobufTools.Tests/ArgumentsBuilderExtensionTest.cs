@@ -1,8 +1,4 @@
-﻿using Cake.Core.IO;
-using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using NUnit.Framework;
 using System.Reflection;
 
 namespace Cake.ProtobufTools.Tests

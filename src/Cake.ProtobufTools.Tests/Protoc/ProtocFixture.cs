@@ -6,7 +6,7 @@ using Cake.Testing.Fixtures;
 using NSubstitute;
 using System;
 
-namespace Cake.ProtobufTools.Tests.Create.Apps
+namespace Cake.ProtobufTools.Tests.Protoc
 {
     public class ProtocFixture : ToolFixture<ProtocSettings>, ICakeContext
     {

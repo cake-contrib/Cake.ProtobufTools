@@ -1,7 +1,7 @@
 ﻿using Cake.Core.IO;
 using NUnit.Framework;
 
-namespace Cake.ProtobufTools.Tests.Create.Apps
+namespace Cake.ProtobufTools.Tests.Protoc
 {
     [TestFixture]
     public class MobileCenter
