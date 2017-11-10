@@ -1,5 +1,8 @@
 ﻿namespace Cake.ProtobufTools
 {
+    /// <summary>
+    /// Settings for protoc.
+    /// </summary>
     public class ProtocSettings : AutoToolSettings
     {
         /// <summary>

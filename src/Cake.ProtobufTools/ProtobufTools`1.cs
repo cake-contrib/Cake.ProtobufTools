@@ -9,7 +9,6 @@ namespace Cake.ProtobufTools
     /// <summary>
     /// 
     /// </summary>
-    /// <typeparam name="TSettings"></typeparam>
     public class ProtobufTools : Tool<ProtocSettings>
     {
         readonly ICakeEnvironment environment;
@@ -27,9 +26,8 @@ namespace Cake.ProtobufTools
         }
 
         /// <summary>
-        /// Runs given <paramref name="command"/> using given <paramref name=" settings"/> and <paramref name="additional"/>.
+        /// Runs protoc using given <paramref name=" settings"/> and <paramref name="additional"/>.
         /// </summary>
-        /// <param name="command"></param>
         /// <param name="settings">The settings.</param>
         /// <param name="additional"></param>
         public void Run(ProtocSettings settings, string[] additional)
@@ -69,6 +67,11 @@ namespace Cake.ProtobufTools
         {
             return new[] { "protoc.exe", "protoc" };
         }
+        /// <summary>
+        /// Finds the proper protoc executable path.
+        /// </summary>
+        /// <param name="settings">The settings.</param>
+        /// <returns>A single path to protoc executable.</returns>
         protected override IEnumerable<FilePath> GetAlternativeToolPaths(ProtocSettings settings)
         {
             var osTarget = GetTarget(settings.OSTarget, environment.Platform);
@@ -76,7 +79,17 @@ namespace Cake.ProtobufTools
             string path = System.IO.Path.Combine("..", "..", "..", "..", "google.protobuf.tools", "Google.Protobuf.Tools", "tools", DirectoryFromTarget(osTarget), exe);
             return new FilePath[] { new FilePath(path) };
         }
+        /// <summary>
+        /// Checks if target is Windows.
+        /// </summary>
+        /// <param name="target">The target.</param>
+        /// <returns>True when target is Windows, false otherwise.</returns>
         public static bool IsWindows(OSTarget target) => target == OSTarget.Windows64 || target == OSTarget.Windows86;
+        /// <summary>
+        /// Get's protoc directory based on <paramref name="target"/>.
+        /// </summary>
+        /// <param name="target">The target.</param>
+        /// <returns>Returns last directory part for given OS.</returns>
         public  static string DirectoryFromTarget(OSTarget target)
         {
             switch (target)
@@ -99,7 +112,13 @@ namespace Cake.ProtobufTools
                     throw new Exception($"Unknown OSTarget {target}");
             }
         }
-
+        /// <summary>
+        /// Automatically determines the <see cref="OSTarget"/>.
+        /// </summary>
+        /// <param name="source">The target specified by user, can be null.</param>
+        /// <param name="platform">The Cake platform.</param>
+        /// <returns>Returns a <see cref="OSTarget"/> based on input parameters.</returns>
+        /// <remarks>Throws an exception if it can't determine the OS.</remarks>
         public static OSTarget GetTarget(OSTarget? source, ICakePlatform platform)
         {
             if (source.HasValue)

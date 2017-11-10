@@ -11,6 +11,12 @@ namespace Cake.ProtobufTools
     /// </summary>
     partial class ProtobufToolsAliases
     {
+        /// <summary>
+        /// Invokes protoc executable.
+        /// </summary>
+        /// <param name="context">The context.</param>
+        /// <param name="settings">The settings.</param>
+        /// <param name="files">Input files.</param>
         [CakeMethodAlias]
         public static void Protoc(this ICakeContext context, ProtocSettings settings, params FilePath[] files)
         {

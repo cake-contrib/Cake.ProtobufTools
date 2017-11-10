@@ -17,7 +17,6 @@ namespace Cake.ProtobufTools
         /// </summary>
         /// <typeparam name="TSettings"></typeparam>
         /// <param name="builder"></param>
-        /// <param name="command"></param>
         /// <param name="settings">The settings.</param>
         /// <param name="arguments"></param>
         public static void AppendAll<TSettings>(this ProcessArgumentBuilder builder, TSettings settings, string[] arguments)
@@ -169,6 +168,11 @@ namespace Cake.ProtobufTools
         {
             return property.GetCustomAttribute<AutoPropertyAttribute>();
         }
+        /// <summary>
+        /// Retrieve <see cref="ParameterAttribute"/> from property or null if there isn't one.
+        /// </summary>
+        /// <param name="property"></param>
+        /// <returns></returns>
         public static ParameterAttribute GetParameterAttributeOrNull(PropertyInfo property)
         {
             return property.GetCustomAttribute<ParameterAttribute>();
@@ -229,6 +233,7 @@ namespace Cake.ProtobufTools
         /// 
         /// </summary>
         /// <param name="property"></param>
+        /// <param name="parameter"></param>
         /// <param name="value"></param>
         /// <returns></returns>
         public static string GetArgumentFromNullableBoolProperty(PropertyInfo property, bool? value, ParameterAttribute parameter)
@@ -283,6 +288,7 @@ namespace Cake.ProtobufTools
         /// </summary>
         /// <param name="property"></param>
         /// <param name="value"></param>
+        /// <param name="parameter"></param>
         /// <returns></returns>
         public static string GetArgumentFromStringProperty(PropertyInfo property, string value, ParameterAttribute parameter)
         {
