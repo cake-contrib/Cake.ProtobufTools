@@ -9,6 +9,10 @@ namespace Cake.ProtobufTools
     /// <summary>
     /// Contains functionality for working with ProtobufTools.
     /// </summary>
+    /// <remarks>Requires Google.Protobuf.Tools NuGet package in your script as a tool.</remarks>
+    /// <example>
+    /// #tool nuget:?package=Google.Protobuf.Tools
+    /// </example>
     partial class ProtobufToolsAliases
     {
         /// <summary>
