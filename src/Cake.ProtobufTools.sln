@@ -3,14 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.ProtobufTools", "Cake.ProtobufTools\Cake.ProtobufTools.csproj", "{CE9145B9-3226-4F87-BD02-392820D8D999}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.ProtobufTools", "Cake.ProtobufTools\Cake.ProtobufTools.csproj", "{CE9145B9-3226-4F87-BD02-392820D8D999}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuSpec", "NuSpec", "{EBECCCC9-29EC-490F-9EC1-E6399B399ADF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{CAEE09AF-15F7-4AD1-952A-504DC02C00A8}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\.appveyor.yml = ..\..\.appveyor.yml
-		..\..\nuspec\nuget\Cake.ProtobufTools.nuspec = ..\..\nuspec\nuget\Cake.ProtobufTools.nuspec
-		..\..\README.md = ..\..\README.md
-		..\..\setup.cake = ..\..\setup.cake
+		..\.appveyor.yml = ..\.appveyor.yml
+		..\.gitignore = ..\.gitignore
+		..\nuspec\nuget\Cake.ProtobufTools.nuspec = ..\nuspec\nuget\Cake.ProtobufTools.nuspec
+		..\README.md = ..\README.md
+		..\setup.cake = ..\setup.cake
 	EndProjectSection
 EndProject
 Global
