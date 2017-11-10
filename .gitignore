@@ -236,6 +236,6 @@ src/tools
 .cr/
 MobileCenterParser/
 integration-test/
-tools/*
+/src/tools/*
 !tools/packages.config
 testing
