@@ -3,7 +3,7 @@
 A Cake AddIn that extends Cake with [Google.Protofbuf.Tools](https://github.com/google/protobuf/) command tools, namely protoc.
 
 [![cakebuild.net](https://img.shields.io/badge/WWW-cakebuild.net-blue.svg)](http://cakebuild.net/)
-[![NuGet](https://img.shields.io/nuget/v/Cake.ProtobufTools.svg)](https://www.nuget.org/packages/Cake.MobileCenter)
+[![NuGet](https://img.shields.io/nuget/v/Cake.ProtobufTools.svg)](https://www.nuget.org/packages/Cake.ProtobufTools)
 
 ## Including addin
 Including addin in cake script is easy.
