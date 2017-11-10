@@ -53,7 +53,7 @@
         /// Writes a FileDescriptorSet (a protocol buffer, defined in descriptor.proto) containing all of
         /// the input files to FILE.
         /// </summary>
-        [Parameter("-OFile")]
+        [Parameter("-oFILE")]
         public bool? OFile { get; set; }
         /// <summary>
         /// Writes a FileDescriptorSet (a protocol buffer, defined in descriptor.proto) containing all of

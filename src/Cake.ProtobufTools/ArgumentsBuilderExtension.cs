@@ -238,7 +238,7 @@ namespace Cake.ProtobufTools
         /// <returns></returns>
         public static string GetArgumentFromNullableBoolProperty(PropertyInfo property, bool? value, ParameterAttribute parameter)
         {
-            if (value.HasValue)
+            if (value ?? false)
             {
                 if (!string.IsNullOrEmpty(parameter?.Name))
                 {
@@ -296,7 +296,7 @@ namespace Cake.ProtobufTools
             {
                 if (!string.IsNullOrEmpty(parameter?.Name))
                 {
-                    return $"{parameter.Name}={value}";
+                    return $"{parameter.Name}=\"{value}\"";
                 }
                 return $"--{GetPropertyName(property.Name)}=\"{value}\"";
             }
@@ -342,7 +342,7 @@ namespace Cake.ProtobufTools
                     {
                         if (char.IsUpper(c))
                         {
-                            result += "-" + char.ToLower(c);
+                            result += "_" + char.ToLower(c);
                         }
                         else
                         {

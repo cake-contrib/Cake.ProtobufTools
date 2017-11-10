@@ -10,7 +10,7 @@ build_script:
   - ps: .\build.ps1 -Target AppVeyor
 
 # Tests
-test: off
+test: on
 
 #---------------------------------#
 #        Branches to build        #
