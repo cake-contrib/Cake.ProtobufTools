@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net46;netstandard1.6</TargetFrameworks>
+    <TargetFrameworks>net46;netstandard2.0</TargetFrameworks>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net46|AnyCPU'">
     <DocumentationFile></DocumentationFile>
@@ -14,6 +14,6 @@
     <DocumentationFile>bin\Release\net46\Cake.ProtobufTools.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Cake.Core" Version="0.22.0" />
+    <PackageReference Include="Cake.Core" Version="0.26.1" />
   </ItemGroup>
 </Project>
