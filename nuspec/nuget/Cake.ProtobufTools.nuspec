@@ -17,7 +17,7 @@
   <files>
     <file src="net46\Cake.ProtobufTools.dll" target="lib/net46" />
     <file src="net46\Cake.ProtobufTools.xml" target="lib/net46" />
-    <file src="netstandard1.6\Cake.ProtobufTools.dll" target="lib/netstandard1.6" />
-    <file src="netstandard1.6\Cake.ProtobufTools.xml" target="lib/netstandard1.6" />
+    <file src="netstandard2.0\Cake.ProtobufTools.dll" target="lib/netstandard2.0" />
+    <file src="netstandard2.0\Cake.ProtobufTools.xml" target="lib/netstandard2.0" />
   </files>
 </package>
