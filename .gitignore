@@ -232,7 +232,7 @@ _Pvt_Extensions
 # FAKE - F# Make
 .fake/
 testing/
-tools/
+tools/*
 .cr/
 MobileCenterParser/
 integration-test/
