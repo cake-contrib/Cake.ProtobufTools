@@ -11,8 +11,7 @@ BuildParameters.SetParameters(
     repositoryName: "Cake.ProtobufTools",
     appVeyorAccountName: "cakecontrib",
 	shouldRunDupFinder: false,
-    shouldRunInspectCode: false,
-	shouldRunCodecov: false);
+    shouldRunInspectCode: false);
 
 BuildParameters.PrintParameters(Context);
 
