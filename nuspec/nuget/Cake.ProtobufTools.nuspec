@@ -14,8 +14,8 @@
     <tags>Cake Script CodeGenerator ProtobufTools</tags>
     <repository type="GitHub" url="https://github.com/cake-contrib/Cake.ProtobufTools" />
   </metadata>
-  <files>
-    <file src="netstandard2.0/Cake.ProtobufTools.dll" target="lib/netstandard2.0" />
-    <file src="netstandard2.0/Cake.ProtobufTools.xml" target="lib/netstandard2.0" />
+  <files>    
+    <file src="netstandard2.0\Cake.ProtobufTools.dll" target="lib/netstandard2.0" />
+    <file src="netstandard2.0\Cake.ProtobufTools.xml" target="lib/netstandard2.0" />
   </files>
 </package>
