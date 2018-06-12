@@ -10,7 +10,7 @@ Including addin in cake script is easy.
 ```c#
 #addin "Cake.ProtobufTools"
 ```
-Google.Protobuf.Tools package isn't included, it has to added manually to your cake script.
+Google.Protobuf.Tools package isn't included, it has to be added manually to your cake script.
 
 ```c#
 #tool nuget:?package=Google.Protobuf.Tools
