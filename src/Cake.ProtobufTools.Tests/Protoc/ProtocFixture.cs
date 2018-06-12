@@ -19,6 +19,8 @@ namespace Cake.ProtobufTools.Tests.Protoc
         ICakeArguments ICakeContext.Arguments => throw new NotImplementedException();
         IProcessRunner ICakeContext.ProcessRunner => ProcessRunner;
         public IRegistry Registry => Registry;
+        public ICakeDataResolver Data => throw new NotImplementedException();
+
         public ProtocFixture() : base("protoc")
         {
             Tools = Substitute.For<IToolLocator>();
