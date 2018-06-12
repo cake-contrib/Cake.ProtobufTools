@@ -4,6 +4,7 @@ A Cake AddIn that extends Cake with [Google.Protofbuf.Tools](https://github.com/
 
 [![cakebuild.net](https://img.shields.io/badge/WWW-cakebuild.net-blue.svg)](http://cakebuild.net/)
 [![NuGet](https://img.shields.io/nuget/v/Cake.ProtobufTools.svg)](https://www.nuget.org/packages/Cake.ProtobufTools)
+[![Build status](https://ci.appveyor.com/api/projects/status/hy5nkbl0bh8emv1e?svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-protobuftools)
 
 ## Including addin
 Including addin in cake script is easy.
