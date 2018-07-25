@@ -43,10 +43,10 @@ namespace Cake.ProtobufTools
             Run(settings, GetArguments(settings, additional));
         }
 
-        private ProcessArgumentBuilder GetArguments(ProtocSettings settings, string[] containers)
+        private ProcessArgumentBuilder GetArguments(ProtocSettings settings, string[] files)
         {
             var builder = new ProcessArgumentBuilder();
-            builder.AppendAll(settings, containers);
+            builder.AppendAll(settings, files);
             return builder;
         }
 

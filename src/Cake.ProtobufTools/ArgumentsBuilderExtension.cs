@@ -40,7 +40,7 @@ namespace Cake.ProtobufTools
             {
                 foreach (string argument in arguments)
                 {
-                    builder.Append(argument);
+                    builder.AppendQuoted(argument);
                 }
             }
         }

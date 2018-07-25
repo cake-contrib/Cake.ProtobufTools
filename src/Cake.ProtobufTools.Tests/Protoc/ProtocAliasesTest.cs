@@ -16,7 +16,7 @@ namespace Cake.ProtobufTools.Tests.Protoc
             };
 
             var actual = fixture.Run();
-            Assert.That(actual.Args, Is.EqualTo("-oFILE --csharp_out=\"some_folder\" definitions.proto"));
+            Assert.That(actual.Args, Is.EqualTo("-oFILE --csharp_out=\"some_folder\" \"definitions.proto\""));
         }
     }
 }
