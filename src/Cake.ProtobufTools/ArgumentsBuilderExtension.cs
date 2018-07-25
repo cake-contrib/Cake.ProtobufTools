@@ -54,7 +54,7 @@ namespace Cake.ProtobufTools
         public static void AppendArguments<TSettings>(ProcessArgumentBuilder builder, TSettings settings, bool preCommand)
             where TSettings : AutoToolSettings, new()
         {
-            foreach (var property in typeof(TSettings).GetProperties(BindingFlags.Public | BindingFlags.Instance))
+            foreach (var property in settings.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance))
             {
                 foreach (string argument in GetArgumentFromProperty(property, settings, preCommand: preCommand))
                 {
