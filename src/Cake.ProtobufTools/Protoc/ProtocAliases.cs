@@ -38,7 +38,7 @@ namespace Cake.ProtobufTools
             }
 
             var runner = new ProtobufTools(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
-            runner.Run(settings, files.Select(f => f.FullPath).ToArray());
+            runner.Run(settings, files.Select(f => $"\"{f.FullPath}\"").ToArray());
         }
     }
 }
