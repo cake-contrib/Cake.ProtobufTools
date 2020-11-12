@@ -30,12 +30,12 @@ To use the addin just add it to Cake call the aliases and configure any settings
 Task("ProtobufGenerator")
 	.Does(() => {
 		var settings = new ProtocSettings
-        {
-                CSharpOut = Directory("."),
-        };
-        var file = File("./definitions.proto");
-        Protoc(settings, file);
-	)};
+		{
+			CSharpOut = Directory("."),
+		};
+		var file = File("./definitions.proto");
+		Protoc(settings, file);
+	});
 ```
 Since Google.ProtobufTools nuget package comes with different executable flavors (Linux, Windows, MacOS X - all having both x86 and x64 versions) the addin, unless explicitly defined, uses the most appropriate based on OS you are running the script. 
 
