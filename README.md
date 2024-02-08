@@ -4,7 +4,18 @@ A Cake AddIn that extends Cake with [Google.Protofbuf.Tools](https://github.com/
 
 [![cakebuild.net](https://img.shields.io/badge/WWW-cakebuild.net-blue.svg)](http://cakebuild.net/)
 [![NuGet](https://img.shields.io/nuget/v/Cake.ProtobufTools.svg)](https://www.nuget.org/packages/Cake.ProtobufTools)
-[![Build status](https://ci.appveyor.com/api/projects/status/hy5nkbl0bh8emv1e?svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-protobuftools)
+
+|Branch|Status|
+|------|------|
+|Master|[![Build status](https://ci.appveyor.com/api/projects/status/github/cake-contrib/Cake.ProtobufTools?branch=master&svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-protobuftools)|
+|Develop|[![Build status](https://ci.appveyor.com/api/projects/status/github/cake-contrib/Cake.ProtobufTools?branch=develop&svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-protobuftools)|
+
+## Important
+
+1.5.0
+* References Cake 4.0.0
+* Drops support for .NET Framework
+* Supports .net 6+
 
 ## Including addin
 Including addin in cake script is easy.
@@ -49,8 +60,14 @@ var settings = new ProtocSettings
 };
 ```
 
+## Discussion
 
+If you have questions, search for an existing one, or create a new discussion on the Cake GitHub repository, using the `extension-q-a` category.
+
+[![Join in the discussion on the Cake repository](https://img.shields.io/badge/GitHub-Discussions-green?logo=github)](https://github.com/cake-build/cake/discussions/categories/extension-q-a)
 
 ## Credits
 
-Brought to you by [Miha Markic](https://github.com/MihaMarkic) ([@MihaMarkic](https://twitter.com/MihaMarkic/)) and contributors.
+Brought to you by [Miha Markic](https://github.com/MihaMarkic) and contributors. 
+
+![Mastodon Follow](https://img.shields.io/mastodon/follow/001030236)
