@@ -15,21 +15,21 @@
         /// directories will be searched in order.If not
         /// given, the current working directory is used.
         /// </summary>
-        public string ProtoPath { get; set; }
+        public string? ProtoPath { get; set; }
         /// <summary>
         /// Read a text-format message of the given type
         /// from standard input and write it in binary
         /// to standard output.The message type must
         /// be defined in PROTO_FILES or their imports.
         /// </summary>
-        public string Encode { get; set; }
+        public string? Encode { get; set; }
         /// <summary>
         /// Read a binary message of the given type from
         /// standard input and write it in text format
         /// to standard output.The message type must
         /// be defined in PROTO_FILES or their imports.
         /// </summary>
-        public string Decode { get; set; }
+        public string? Decode { get; set; }
         /// <summary>
         /// Read an arbitrary protocol message from
         /// standard input and write the raw tag/value
@@ -48,7 +48,7 @@
         /// appears multiple times, the first occurrence
         /// will be used.
         /// </summary>
-        public string DescriptorSetIn { get; set; }
+        public string? DescriptorSetIn { get; set; }
         /// <summary>
         /// Writes a FileDescriptorSet (a protocol buffer, defined in descriptor.proto) containing all of
         /// the input files to FILE.
@@ -59,7 +59,7 @@
         /// Writes a FileDescriptorSet (a protocol buffer, defined in descriptor.proto) containing all of
         /// the input files to FILE.
         /// </summary>
-        public string DescriptorSetOut { get; set; }
+        public string? DescriptorSetOut { get; set; }
         /// <summary>
         /// When using --descriptor_set_out, also include
         /// all dependencies of the input files in the
@@ -80,13 +80,13 @@
         /// expected by make.This writes the transitive
         /// set of input file paths to FILE
         /// </summary>
-        public string DependencyOut { get; set; }
+        public string? DependencyOut { get; set; }
         /// <summary>
         /// Set the format in which to print errors.
         /// FORMAT may be 'gcc' (the default) or 'msvs'
         /// (Microsoft Visual Studio format).
         /// </summary>
-        public string ErrorFormat { get; set; }
+        public string? ErrorFormat { get; set; }
         /// <summary>
         /// Print the free field numbers of the messages
         /// defined in the given proto files.Groups share
@@ -105,43 +105,43 @@
         /// is mapped to the given executable even if
         /// the executable's own name differs.
         /// </summary>
-        public string Plugin { get; set; }
+        public string? Plugin { get; set; }
         /// <summary>
         /// Generate C++ header and source.
         /// </summary>
-        public string CppOut { get; set; }
+        public string? CppOut { get; set; }
         /// <summary>
         /// Generate C# source file.
         /// </summary>
         [Parameter("--csharp_out")]
-        public string CSharpOut { get; set; }
+        public string? CSharpOut { get; set; }
         /// <summary>
         /// Generate Java source file.
         /// </summary>
-        public string JavaOut { get; set; }
+        public string? JavaOut { get; set; }
         /// <summary>
         /// Generate Java Nano source file.
         /// </summary>
-        public string JavananoOut { get; set; }
+        public string? JavananoOut { get; set; }
         /// <summary>
         /// Generate JavaScript source file.
         /// </summary>
-        public string JsOut { get; set; }
+        public string? JsOut { get; set; }
         /// <summary>
         /// Generate ObjectiveC header and source.
         /// </summary>
-        public string ObjcOut { get; set; }
+        public string? ObjcOut { get; set; }
         /// <summary>
         /// Generate PHP source file.
         /// </summary>
-        public string PhpOut { get; set; }
+        public string? PhpOut { get; set; }
         /// <summary>
         /// Generate Python source file.
         /// </summary>
-        public string PythonOut { get; set; }
+        public string? PythonOut { get; set; }
         /// <summary>
         /// Generate Ruby source file.
         /// </summary>
-        public string RubyOut { get; set; }
+        public string? RubyOut { get; set; }
     }
 }
